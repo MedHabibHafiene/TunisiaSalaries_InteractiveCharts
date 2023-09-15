@@ -183,9 +183,9 @@
             ) {
               return `   ${d.key}(0%)`;
             }
-            let label = "- " + d.key;
+            let label = d.value+' /(Total '+all.value()+' ) '+ d.key;
             if (all.value()) {
-              label += `   (${((d.value / all.value()) * 100).toFixed(2)}%)`;
+              label += `(${((d.value / all.value()) * 100).toFixed(2)}%)`;
             }
             return label;
           });
