@@ -48,7 +48,7 @@ d3.js
 crossfilter.js
 ## Feedback
 
-Feel free to reach out to us if you have any questions or feedback. Happy exploring!
+Feel free to reach out to me if you have any questions or feedback. Happy exploring!
 
 
 ## License
