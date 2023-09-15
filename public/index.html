@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>result_dump_QoS_ADSL</title>
+    <link rel="icon" href="dashboard-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="dashboard-icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="./style/dc.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="dashboard center">Salaire en Tunisie</div>
+    <div class="row">
+      <div class="boxMin">
+        <h3 class="title">Poste</h3>
+        <div id="poste">
+          <span class="reset" style="display: none"
+            >Selected: <span class="filter"></span
+          ></span>
+          <a
+            class="reset"
+            href="javascript:posteChart.filterAll();dc.redrawAll();"
+            style="display: none"
+            >reset</a 
+          >
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="boxMin">
+        <h3 class="title">Année d'experience</h3>
+        <div class="center">
+          <div id="xp">
+            <span class="reset" style="display: none"
+              >Selected: <span class="filter"></span
+            ></span>
+            <a
+              class="reset"
+              href="javascript:xpChart.filterAll();dc.redrawAll();"
+              style="display: none"
+              >reset</a
+            >
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="boxMin">
+        <h3 class="title">Salaire (TND)</h3>
+        <div id="salaire">
+          <span class="reset" style="display: none"
+            >Selected: <span class="filter"></span
+          ></span>
+          <a
+            class="reset"
+            href="javascript:salaireChart.filterAll();dc.redrawAll();"
+            style="display: none"
+            >reset</a
+          >
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box2">
+        <h3 class="title">Nom entreprise</h3>
+        <div id="entreprise">
+          <span class="reset" style="display: none"
+            >Selected: <span class="filter"></span
+          ></span>
+          <a
+            class="reset"
+            href="javascript:entrepriseChart.filterAll();dc.redrawAll();"
+            style="display: none"
+            >reset</a
+          >
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="box2">
+        <h3 class="title">Stack technologique</h3>
+        <div id="stack">
+          <span class="reset" style="display: none"
+            >Selected: <span class="filter"></span
+          ></span>
+          <a
+            class="reset"
+            href="javascript:stackChart.filterAll();dc.redrawAll();"
+            style="display: none"
+            >reset</a
+          >
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="crossfilter.js"></script>
+    <script src="d3.js"></script>
+    <script src="dc.js"></script>
+
+    <!-- <script src="https://dc-js.github.io/dc.js/js/d3.js"></script> -->
+    <!-- <script src="https://dc-js.github.io/dc.js/js/dc.js"></script> -->
+
+    <script>
+      var posteChart = dc.rowChart("#poste");
+      var entrepriseChart = dc.rowChart("#entreprise");
+      var xpChart = dc.pieChart("#xp");
+      var salaireChart = dc.rowChart("#salaire");
+      var stackChart = dc.rowChart("#stack");
+
+      // d3.csv("data.csv", function (err, data) {
+      d3.json("./data/dataF.json").then(function (data) {
+        if (!data) throw new Error("Error loading data");
+
+        // if (err) throw err;
+
+        console.log(data);
+
+        var ndx = crossfilter(data);
+        var all = ndx.groupAll();
+
+        var posteDim = ndx.dimension(function (d) {
+          return d["Poste"];
+        });
+        var stackDim = ndx.dimension(function (d) {
+          return d[
+            "Stack technologique(ex: java, javascript, angular, react ...)"
+          ];
+        });
+        var salaireDim = ndx.dimension(function (d) {
+          return d["Salaire (TND)"];
+        });
+
+        var entrepriseDim = ndx.dimension(function (d) {
+          var nomEntreprise = d["Nom entreprise"];
+          if (nomEntreprise !== null && /^[A-Za-z]/.test(nomEntreprise)) {
+            return nomEntreprise;
+          }
+          return "Unknown 🙃 ";
+        });
+
+        var xpDim = ndx.dimension(function (d) {
+          var excludedValues = ["0 ans ", "0 Ans", "0ans"];
+
+          if (excludedValues.indexOf(d["Année d'experience:"]) !== -1) {
+            return "0 ans";
+          }
+          return d["Année d'experience:"];
+        });
+
+        var posteGroup = posteDim.group();
+        var entrepriseGroup = entrepriseDim.group();
+        var xpGroup = xpDim.group();
+        var salaireGroup = salaireDim.group();
+        var stackGroup = stackDim.group();
+
+        posteChart
+          .dimension(posteDim)
+          .group(posteGroup)
+          .width(400)
+          .height(800)
+          .label((d) => {
+            if (posteChart.hasFilter() && !posteChart.hasFilter(d.key)) {
+              return `   ${d.key}(0%)`;
+            }
+            let label = "- " + d.key;
+            if (all.value()) {
+              label += `   (${((d.value / all.value()) * 100).toFixed(2)}%)`;
+            }
+            return label;
+          })
+          .ordinalColors(["#DDE6ED"]);
+
+        entrepriseChart
+          .dimension(entrepriseDim)
+          .group(entrepriseGroup)
+          .width(400)
+          .height(2000)
+          .label((d) => {
+            if (
+              entrepriseChart.hasFilter() &&
+              !entrepriseChart.hasFilter(d.key)
+            ) {
+              return `   ${d.key}(0%)`;
+            }
+            let label = "- " + d.key;
+            if (all.value()) {
+              label += `   (${((d.value / all.value()) * 100).toFixed(2)}%)`;
+            }
+            return label;
+          });
+        stackChart
+          .dimension(stackDim)
+          .group(stackGroup)
+          .width(400)
+          .height(2000)
+          .ordinalColors(["#DDE6EF"]);
+        salaireChart
+          .dimension(salaireDim)
+          .group(salaireGroup)
+          .width(400)
+          .height(800)
+          .label((d) => {
+            if (salaireChart.hasFilter() && !salaireChart.hasFilter(d.key)) {
+              return `   ${d.key}(0%)`;
+            }
+            let label = "- " + d.key;
+            if (all.value()) {
+              label += `   (${((d.value / all.value()) * 100).toFixed(2)}%)`;
+            }
+            return label;
+          });
+        xpChart
+          .dimension(xpDim)
+          .group(xpGroup)
+          .width(300)
+          .height(800)
+          .label((d) => {
+            if (xpChart.hasFilter() && !xpChart.hasFilter(d.key)) {
+              return `   ${d.key}(0%)`;
+            }
+            let label = "- " + d.key;
+            if (all.value()) {
+              label += `   (${((d.value / all.value()) * 100).toFixed(2)}%)`;
+            }
+            return label;
+          })
+          .legend(
+            dc
+              .legend()
+              .horizontal(false)
+              .x(20)
+              .y(28)
+              .legendText(
+                (d) =>
+                  " - " +
+                  ` ${d.name}: ${d.data} | ${(
+                    (d.data / all.value()) *
+                    100
+                  ).toFixed(2)} %`
+              )
+          );
+
+        // Change the appearance of the chart (for a row chart)
+        posteChart.on("pretransition", (chart) => {
+          chart.selectAll("rect.bar").style("fill", "none");
+          chart.selectAll("text").style("font-family", "Palatino Linotype");
+        });
+
+        dc.renderAll();
+      });
+    </script>
+  </body>
+</html>
