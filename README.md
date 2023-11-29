@@ -1,3 +1,4 @@
+# (This is just for practicing my new skills)
 # Tunisia Salaries Interactive Charts
 
 Explore an interactive data visualization project showcasing employee dataset insights 
