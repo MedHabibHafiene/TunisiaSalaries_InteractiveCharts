@@ -1,9 +1,9 @@
 [
   {
     "Timestamp": "11/14/2021 20:56:33",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
-    "Stack technologique(ex: java, javascript, angular, react ...)": "javascipt",
+    "Stack technologique(ex: java, javascript, angular, react ...)": "javascript",
     "Année d'experience:": "2 ans",
     "Salaire (TND)": 1900,
     "Vous avez un commentaire ou un message ?": null
@@ -46,20 +46,20 @@
   },
   {
     "Timestamp": "11/14/2021 21:11:54",
-    "Nom entreprise": "!...",
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "react nodejs",
     "Année d'experience:": "0 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": null
   },
   {
     "Timestamp": "11/14/2021 21:12:04",
     "Nom entreprise": "LNS",
     "Poste": "Fullstack developer",
-    "Stack technologique(ex: java, javascript, angular, react ...)": "Réact redux note js ",
+    "Stack technologique(ex: java, javascript, angular, react ...)": "React redux Node.js ",
     "Année d'experience:": "0 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": null
   },
   {
@@ -68,7 +68,7 @@
     "Poste": "Database administrator",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Full stack ",
     "Année d'experience:": "1 ans",
-    "Salaire (TND)": 4.4,
+    "Salaire (TND)": 4400,
     "Vous avez un commentaire ou un message ?": "Un ingénieur débutant  sur les papiers officiel touche 3.300 dt équivalent 1200 dollar ingénieur qui vas apporter pour l entreprise plusque les 3000 mille obtenu  si un ingénieur accepte de travailler et prendre 800 dt il n'es pas digne de titre ingénieur . Moi personnellement  j'ai que 1 ans d'expérience malgré ca j arrive a touché les 4000 sans prime et les junior 3 ans touche 8000 facile merci "
   },
   {
@@ -86,7 +86,7 @@
     "Poste": "Business analyst",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Consulting",
     "Année d'experience:": "3 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": null
   },
   {
@@ -118,7 +118,7 @@
   },
   {
     "Timestamp": "11/14/2021 22:06:39",
-    "Nom entreprise": "Anyone",
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Node express react",
     "Année d'experience:": "1 ans",
@@ -127,7 +127,7 @@
   },
   {
     "Timestamp": "11/14/2021 22:16:35",
-    "Nom entreprise": "-------------------------",
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Mern, aws, elasticsearch, web crawlers(python) ",
     "Année d'experience:": "2 ans",
@@ -145,7 +145,7 @@
   },
   {
     "Timestamp": "11/14/2021 22:50:59",
-    "Nom entreprise": "??",
+    "Nom entreprise": "Non spécifié",
     "Poste": "Backend developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "PHP",
     "Année d'experience:": "7 ans",
@@ -166,7 +166,7 @@
     "Nom entreprise": "sofrecom",
     "Poste": "Front end developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "javascript,php,symfony,css,html...",
-    "Année d'experience:": "10 ans",
+    "Année d'experience:": "0 ans",
     "Salaire (TND)": 3000,
     "Vous avez un commentaire ou un message ?": "no"
   },
@@ -221,7 +221,7 @@
     "Poste": "Devops engineer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Java, angular, react, aws, terraform",
     "Année d'experience:": "8 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": null
   },
   {
@@ -235,7 +235,7 @@
   },
   {
     "Timestamp": "11/15/2021 6:40:49",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "MERN",
     "Année d'experience:": "0 ans",
@@ -253,7 +253,7 @@
   },
   {
     "Timestamp": "11/15/2021 9:05:06",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "SEO manager",
     "Stack technologique(ex: java, javascript, angular, react ...)": "HTML CSS JAVASCRIPT. SEO skills.",
     "Année d'experience:": "1 ans",
@@ -262,7 +262,7 @@
   },
   {
     "Timestamp": "11/15/2021 9:10:30",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Front end developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "React native",
     "Année d'experience:": "2 ans",
@@ -280,7 +280,7 @@
   },
   {
     "Timestamp": "11/15/2021 11:19:23",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Consultant technique dynamics 365 for finance and opérations",
     "Stack technologique(ex: java, javascript, angular, react ...)": "X++",
     "Année d'experience:": "1 ans",
@@ -298,7 +298,7 @@
   },
   {
     "Timestamp": "11/15/2021 13:45:57",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Front end developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "React",
     "Année d'experience:": "4 ans",
@@ -316,7 +316,7 @@
   },
   {
     "Timestamp": "11/15/2021 19:07:40",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Backend developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "react js",
     "Année d'experience:": "0 ans",
@@ -347,7 +347,7 @@
     "Poste": "Full Stack Dev / CTO",
     "Stack technologique(ex: java, javascript, angular, react ...)": "MERN + golang + python/datascience + serverless ...",
     "Année d'experience:": "6 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": "يعطيكم الصحة"
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "Timestamp": "11/16/2021 18:06:43",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": ".Net c# VueJs",
     "Année d'experience:": "4 ans",
@@ -388,7 +388,7 @@
   },
   {
     "Timestamp": "11/17/2021 5:54:59",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Team leader",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Php symfony, laravel , wordpress ,prestashop ",
     "Année d'experience:": "9 ans",
@@ -406,7 +406,7 @@
   },
   {
     "Timestamp": "11/17/2021 11:12:56",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Quality assurance tester",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Automation mobile/web testing (python, js,..) ",
     "Année d'experience:": "1 ans",
@@ -415,7 +415,7 @@
   },
   {
     "Timestamp": "11/17/2021 19:41:28",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "angular/java",
     "Année d'experience:": "3 ans",
@@ -478,7 +478,7 @@
   },
   {
     "Timestamp": "11/17/2021 20:39:21",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Dotnet",
     "Année d'experience:": "15 ans",
@@ -514,7 +514,7 @@
   },
   {
     "Timestamp": "11/17/2021 20:57:42",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Data scientist",
     "Stack technologique(ex: java, javascript, angular, react ...)": "python,R,SQL,Spark",
     "Année d'experience:": "3 ans",
@@ -523,7 +523,7 @@
   },
   {
     "Timestamp": "11/17/2021 21:00:37",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Financial Computing ",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Python",
     "Année d'experience:": "1 ans",
@@ -541,7 +541,7 @@
   },
   {
     "Timestamp": "11/17/2021 21:03:39",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Backend developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "JavaScript/PHP/devops",
     "Année d'experience:": "5 ans",
@@ -568,7 +568,7 @@
   },
   {
     "Timestamp": "11/17/2021 21:44:02",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Jee angular ",
     "Année d'experience:": "3 ans",
@@ -586,7 +586,7 @@
   },
   {
     "Timestamp": "11/17/2021 22:20:43",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Nodejs reactjs",
     "Année d'experience:": "2 ans",
@@ -595,7 +595,7 @@
   },
   {
     "Timestamp": "11/17/2021 22:33:31",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Dotnet core , angular ",
     "Année d'experience:": "5 ans",
@@ -613,7 +613,7 @@
   },
   {
     "Timestamp": "11/17/2021 22:53:53",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Front end developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "React",
     "Année d'experience:": "4 ans",
@@ -640,7 +640,7 @@
   },
   {
     "Timestamp": "11/18/2021 0:23:34",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": ".net",
     "Année d'experience:": "3 ans",
@@ -658,7 +658,7 @@
   },
   {
     "Timestamp": "11/19/2021 19:01:16",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Front end developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "React,graphql ,typescript, tailwind, react-query ,react-form ",
     "Année d'experience:": "2 ans",
@@ -667,7 +667,7 @@
   },
   {
     "Timestamp": "11/20/2021 22:25:14",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "mern",
     "Année d'experience:": "0 ans",
@@ -694,7 +694,7 @@
   },
   {
     "Timestamp": "11/25/2021 18:01:50",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "reactjs, nodejs, azure, nextjs, ",
     "Année d'experience:": "0 ans",
@@ -703,7 +703,7 @@
   },
   {
     "Timestamp": "12/2/2021 16:43:34",
-    "Nom entreprise": null,
+    "Nom entreprise": "Non spécifié",
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "php, laravel, javascript, MySQL, elasticsearch, ...",
     "Année d'experience:": "2 ans",
@@ -724,8 +724,8 @@
     "Nom entreprise": "Nehos Groupe",
     "Poste": "React developer ",
     "Stack technologique(ex: java, javascript, angular, react ...)": "JS, React ",
-    "Année d'experience:": "0ans",
-    "Salaire (TND)": null,
+    "Année d'experience:": "0 ans",
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": "Bac+3, locale fi Sfax"
   },
   {
@@ -734,7 +734,7 @@
     "Poste": "Java software engineer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Java, SQL, JS, Kafka, Talend",
     "Année d'experience:": "0~1 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": "Good work environment + time flex"
   },
   {
@@ -742,8 +742,8 @@
     "Nom entreprise": "Systematic Software Solution",
     "Poste": "Software Developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": ".Net 4.5.1 ",
-    "Année d'experience:": "0 Ans",
-    "Salaire (TND)": null,
+    "Année d'experience:": "0 ans",
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": "Bad work environment + You work with your own laptop+ when you finish a project they use external Hard Disk to copy the project and deliver it to the client."
   },
   {
@@ -752,7 +752,7 @@
     "Poste": "Fullstack developer",
     "Stack technologique(ex: java, javascript, angular, react ...)": "Php, javascript, MySQL,HTML CSS, SEO, drupal, wordpress, prestashop",
     "Année d'experience:": "11 ans",
-    "Salaire (TND)": null,
+    "Salaire (TND)": "Non spécifié",
     "Vous avez un commentaire ou un message ?": "Avantages : 13 eme mois, CNSS, téléphone mobile, Macbook, PC, horaire flexible, remote 100%"
   }
 ]
