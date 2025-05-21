@@ -2,7 +2,7 @@
 # Tunisia Salaries Interactive Charts
 
 Explore an interactive data visualization project showcasing employee dataset insights 
-🚀 View the deployed project : https://tunisie-salaire.netlify.app
+🚀 View the deployed project : https://tunisia-salaries-interactive-charts.vercel.app/
 
 Welcome to the Tunisia Salaries Interactive Charts repository! This interactive web application is powered by dc.js, d3.js, and crossfilter.js, allowing you to explore and visualize raw salary data from Tunisia in dynamic, interactive charts.
 
